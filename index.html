@@ -8,59 +8,73 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Half Slider - Demo Web Site</title>
+	<!---Bu kısımda url kısmındaki başlık kısmı --->
+    <title>EGS Elektrik</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+	<!--
+	Bu kısımda uzantıları veriyoruz örneğin bir css dosyası yazdık bu sayfada o özellikleri kullanmak için burada yolunu beli
+	belitmemz gerekiyorü
+	Simdi bunun yol mantıgını gostericem bi alttaki ni mesela
+	
+	Yol mantıgını tekrar gosteriyorum
+	
+	Demin yaptıgım tasarim.php dosyasını cagır..
+	
+	Dolas tab ile:D
+	bootstrap.min.css bunun nerde olduguna bakıcaz..
+	---->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">																																												
+	
     <!-- Custom styles for this template -->
     <link href="css/half-slider.css" rel="stylesheet">
+
 
   </head>
 
   <body>
 
     <!-- Navigation -->
+	
+	 <!-- nav nedir?
+		<a tag ? link(href) alır 
+	 -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Demo Web Site</a>
+        <a class="navbar-brand" href="index.html" >EGS Elektrik</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
+              <a class="nav-link" href="index.html">Anasayfa
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="iletisim.html">İletişim</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
+            
           </ul>
         </div>
       </div>
     </nav>
 
+	
+	
     <header>
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div id="sliderbottomButton" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#sliderbottomButton" data-slide-to="0" ></li>
+          <li data-target="#sliderbottomButton" data-slide-to="1" class="active"></li>
+          <li data-target="#sliderbottomButton" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
           <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
+          <div class="carousel-item active" style="background-image: url('http://www.feysan.com.tr/dosyalar/images/feysanslider-2.jpg')">
             <div class="carousel-caption d-none d-md-block">
-              <h3>First Slide</h3>
-              <p>This is a description for the first slide.</p>
+              <h3 style="color:#333">EGS Elektrik</h3>
+              <p>Elektronik Güvenlik Sistemleri </p>
             </div>
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
@@ -78,11 +92,11 @@
             </div>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#sliderbottomButton" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#sliderbottomButton" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
@@ -90,18 +104,35 @@
     </header>
 
     <!-- Page Content -->
-    <section class="py-5">
+    <section class="py-5" style="background-color:#ffffff">
       <div class="container">
         <h1> Demo Web Site</h1>
-        <p>Bu bir deneme web sitesi şablonudur.
+        <p style="color:#155724">Bu bir deneme web sitesi şablonudur.
          </p>
+		 <pre>Deneme</pre>
       </div>
     </section>
 
+	<section class="py-5" style="background-color:#bbb7b7">
+      <div class="container">
+	  
+        <h1> Demo Melike</h1>
+        <p style="color:#155724">Bu bir deneme web sitesi şablonudur.
+         </p>
+		 <pre>Deneme</pre>
+		 
+      </div>
+    </section>
     <!-- Footer -->
     <footer class="py-5 bg-dark">
-      <div class="container">
+      <div class="container" style="text-align:center">
+		<a style="color:#333"  href="https://github.com/">Link</a>
         <p class="m-0 text-center text-white">deneme &copy; Demo 2017</p>
+		 <h1> Demo Melike</h1>
+        <p style="color:#155724">Bu bir deneme web sitesi şablonudur.
+         </p>
+		 <pre>Deneme</pre>
+		 </div>
       </div>
       <!-- /.container -->
     </footer>
